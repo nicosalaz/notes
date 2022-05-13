@@ -21,7 +21,7 @@ const styleHeader = {
         borderBottom:'solid 2px'
     },
     divHeaderContainer:{
-        width: '30vw',
+        width: '40vw',
         display: 'flex',
         flexFlow:'row',
         justifyContent:'space-around',

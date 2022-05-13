@@ -3,12 +3,17 @@ import NoteIcon from './NoteCardComponents/NoteIcon';
 import NoteDescription from './NoteCardComponents/NoteDescription';
 import ButtonsNote from './NoteCardComponents/ButtonsNote';
 
-const Note = () => {
+const Note = (props) => {
     return (
-        <div style={styleNote.note}>
-            <NoteIcon/>
-            <NoteDescription/>
-            <ButtonsNote/>
+        <div style={styleNote.note} >
+            <NoteIcon />
+            <NoteDescription 
+                titulo={props.titulo}
+                descripcion = {props.descripcion}
+            />
+            <ButtonsNote
+                key = {props.key}
+            />
         </div>
     );
 };
@@ -20,7 +25,7 @@ const styleNote={
         flexFlow:'row nowrap',
         justifyContent:'space-between',
         border:'solid',
-        marginTop:'20px'
+        marginTop:'20px',
     }
 }
 

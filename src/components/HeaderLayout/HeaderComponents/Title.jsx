@@ -15,7 +15,7 @@ const styleTitle ={
         alignItems:'center',
     },
     letter:{
-        fontFamily: '"Radio Canada", sans-serif'
+        fontFamily: '"Radio Canada", sans-serif',
     }
     
 };
